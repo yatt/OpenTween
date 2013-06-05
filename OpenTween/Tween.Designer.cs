@@ -236,6 +236,8 @@
             this.HashManageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RtCountMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ListManageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator44 = new System.Windows.Forms.ToolStripSeparator();
+            this.URLListMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuItemUserStream = new System.Windows.Forms.ToolStripMenuItem();
             this.StopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripSeparator40 = new System.Windows.Forms.ToolStripSeparator();
@@ -1785,7 +1787,9 @@
             this.HashToggleToolStripMenuItem,
             this.HashManageToolStripMenuItem,
             this.RtCountMenuItem,
-            this.ListManageToolStripMenuItem});
+            this.ListManageToolStripMenuItem,
+            this.toolStripSeparator44,
+            this.URLListMenuItem});
             this.MenuItemCommand.Name = "MenuItemCommand";
             this.MenuItemCommand.DropDownOpening += new System.EventHandler(this.MenuItemCommand_DropDownOpening);
             // 
@@ -1955,6 +1959,17 @@
             resources.ApplyResources(this.ListManageToolStripMenuItem, "ListManageToolStripMenuItem");
             this.ListManageToolStripMenuItem.Name = "ListManageToolStripMenuItem";
             this.ListManageToolStripMenuItem.Click += new System.EventHandler(this.ListManageToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator44
+            // 
+            resources.ApplyResources(this.toolStripSeparator44, "toolStripSeparator44");
+            this.toolStripSeparator44.Name = "toolStripSeparator44";
+            // 
+            // URLListMenuItem
+            // 
+            resources.ApplyResources(this.URLListMenuItem, "URLListMenuItem");
+            this.URLListMenuItem.Name = "URLListMenuItem";
+            this.URLListMenuItem.Click += new System.EventHandler(this.URLListMenuItem_Click);
             // 
             // MenuItemUserStream
             // 
@@ -2834,6 +2849,8 @@
         private System.Windows.Forms.ToolStripMenuItem ProtectTbMenuItem;
         private TweetThumbnail tweetThumbnail1;
         private System.Windows.Forms.ToolStripMenuItem TwitterApiStatusToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator44;
+        private System.Windows.Forms.ToolStripMenuItem URLListMenuItem;
 
     }
 }

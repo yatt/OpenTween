@@ -339,6 +339,12 @@
     <EmbeddedResource Include="TabsDialog.zh-CHS.resx">
       <DependentUpon>TabsDialog.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tween.ja-JP.resx">
+      <DependentUpon>Tween.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tween.ja.resx">
+      <DependentUpon>Tween.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TweetThumbnail.resx">
       <DependentUpon>TweetThumbnail.cs</DependentUpon>
     </EmbeddedResource>

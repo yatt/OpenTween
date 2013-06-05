@@ -13252,5 +13252,25 @@ namespace OpenTween
         {
             this.OpenUriAsync(Twitter.ServiceAvailabilityStatusUrl);
         }
+
+        private void URLListMenuItem_Click(object sender, EventArgs e)
+        {
+            // URL一覧をクリップボードにコピー
+
+            // 選択されているツイートがあれば継続
+            if (this.ExistCurrentPost)
+            {
+                // 選択したツイートのURL一覧をテキストで取得
+                StringBuilder UrlList = new StringBuilder();
+                foreach (int index in _curList.SelectedIndices)
+                {
+                    PostClass post = GetCurTabPost(index);
+                    UrlList.Append("https://twitter.com/" + post.ScreenName + "/status/" + post.StatusId);
+                    UrlList.Append("\r\n");
+                }
+                // クリップボードにコピー
+                Clipboard.SetDataObject(UrlList.ToString(), true);
+            }
+        }
     }
 }
